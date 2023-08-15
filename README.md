@@ -13,9 +13,9 @@ Node.js application build progressively.
 Some experience with:
 
 - Javascript
-- Typescript
-- Node.js
-- npm
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
 ## Branches
 
