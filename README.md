@@ -18,3 +18,11 @@ Some experience with:
 - npm
 
 ## Branches
+
+### main
+
+- __main__: the end result
+
+### part-xx
+
+- __part-01__: Setup + First app (Hello World!)
