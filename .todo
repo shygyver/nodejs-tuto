@@ -1,14 +1,14 @@
 # part-01
-[] Install dependencies
-[] Create first app (app.ts)
-    [] Configure middlewares
-    [] First route (routes/)
-    [] Configure package scripts
-        [] lint, .eslintrc.json
-        [] build, tsconfig.json
-        [] start
-    [] Configure CORS (Cross-origin resource sharing)
-    [] Configure dev environment
-        [] nodemon, nodemon.json, package script 'dev'
-        [] debug (debug/)
-        [] dotenv
+[x] Install dependencies
+[x] Create first app (app.ts)
+    [x] Configure middlewares
+    [x] First route (routes/)
+    [x] Configure package scripts
+        [x] lint, .eslintrc.json
+        [x] build, tsconfig.json
+        [x] start
+    [x] Configure CORS (Cross-origin resource sharing)
+    [x] Configure dev environment
+        [x] nodemon, nodemon.json, package script 'dev'
+        [x] debug (debug/)
+        [x] dotenv
