@@ -6,7 +6,9 @@
 
 # Node.js tuto
 
-Node.js application build progressively.
+Node.js REST API built gradually.
+
+<sub>__NOTE__: it is NOT a Node.js tutorial! Some knowledge is prerequired!</sub>
 
 ## Suggested prerequisites
 
