@@ -1,5 +1,5 @@
 import routing from '@novice1/routing';
-import { debugRoute } from '../debug/loggers';
+import { debugRoute } from '../services/debug';
 
 // hello-world
 export default routing().get({

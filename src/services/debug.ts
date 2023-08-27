@@ -4,4 +4,4 @@ logger.Debug.enable([
     'route*'
 ].join('|'));
 
-export default {};
+export const debugRoute = logger.debugger('route');
