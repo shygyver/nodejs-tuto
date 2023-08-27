@@ -14,12 +14,12 @@
         [x] dotenv
 
 # part-02
-[ ] http errors (middlewares)
+[x] http errors (middlewares)
     [] 404
     [] error
-[ ] Items
+[x] Items
     [] get/post/put/delete
-[ ] Request validation
-    [ ] Install dependencies: joi @novice1/validator-joi
-    [ ] Configure app.ts
-    [ ] Validate query, body, ...
+[x] Request validation
+    [x] Install dependencies: joi @novice1/validator-joi
+    [x] Configure app.ts
+    [x] Validate query, body, ...
