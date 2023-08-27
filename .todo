@@ -12,3 +12,14 @@
         [x] nodemon, nodemon.json, package script 'dev'
         [x] debug (debug/)
         [x] dotenv
+
+# part-02
+[ ] http errors (middlewares)
+    [] 404
+    [] error
+[ ] Items
+    [] get/post/put/delete
+[ ] Request validation
+    [ ] Install dependencies: joi @novice1/validator-joi
+    [ ] Configure app.ts
+    [ ] Validate query, body, ...

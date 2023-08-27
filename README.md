@@ -28,3 +28,4 @@ Some experience with:
 ### part-xx
 
 - __part-01__: Setup + First app (Hello World!)
+- __part-02__: http errors + request validation
