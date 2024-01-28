@@ -18,7 +18,7 @@ export const app = new FrameworkApp({
         ],
         validators: [validatorJoi(undefined, (err, _req, res) => {
             debugMiddleware.extend('validator-joi').error(err)
-            res.status(400).json({message: "bad request"})
+            res.status(400).json({message: 'bad request'})
         })]
     },
     routers: routes

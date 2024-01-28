@@ -5,7 +5,7 @@ import { ErrorRequestHandler } from 'express';
 
 const logger = debugRoute.extend('items')
 
-const updateItem401: ErrorRequestHandler = (err, _req, res, _) => {
+const updateItem401: ErrorRequestHandler = (err, _req, res) => {
     const log = debugMiddleware.extend('updateItem401');
     log.error(err);
     res.status(401).json({message: 'Bad request: could not update item'})
