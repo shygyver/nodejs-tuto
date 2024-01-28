@@ -23,3 +23,19 @@
     [x] Install dependencies: joi @novice1/validator-joi
     [x] Configure app.ts
     [x] Validate query, body, ...
+
+# part-03
+[x] Install dependencies: 
+    - npm i @novice1/api-doc-generator yamljs
+    - npm i --save-dev @types/yamljs
+[ ] Open API
+    [x] Create service
+    [x] Import service in index to register app meta
+    [x] Create route to access documentation
+    [x] Remove some routes from the documentation
+    [o] Complete documentation
+        [x] routes description
+        [x] tags
+        [ ] responses
+            [ ] hello-world,
+            [ ] Post item, ...

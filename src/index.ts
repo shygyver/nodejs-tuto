@@ -1,8 +1,8 @@
 import logger from '@novice1/logger';
 import { app } from './app';
 import { httpError, httpNotFound } from './middlewares/http';
-
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8000;
+import { PORT } from './config/server';
+import { openAPIGenerator } from './services/openapi/generator';
 
 // 404
 app.use(httpNotFound);
@@ -13,4 +13,9 @@ app.useError(httpError);
 // start server
 app.listen(PORT, () => {
     logger.info('Application running on port', PORT)
+
+    /**
+     * Add app metadata to API documentation generator
+     */
+    openAPIGenerator.add(app.meta)
 })

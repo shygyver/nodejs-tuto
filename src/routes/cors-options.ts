@@ -3,5 +3,8 @@ import routing from '@novice1/routing';
 
 // enable CORS (Cross-origin resource sharing) pre-flight request
 export default routing().options({
-    path: '*'
+    path: '*',
+    parameters: {
+        undoc: true
+    }
 }, cors());

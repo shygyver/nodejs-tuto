@@ -24,6 +24,7 @@
     "@types/cookie-parser": "^1.4.3",
     "@types/cors": "^2.8.13",
     "@types/node": "^20.5.6",
+    "@types/yamljs": "^0.2.33",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "dotenv": "^16.3.1",
@@ -32,6 +33,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@novice1/api-doc-generator": "^0.1.1",
     "@novice1/app": "^0.3.1",
     "@novice1/logger": "^1.3.3",
     "@novice1/routing": "^1.1.4",
@@ -41,6 +43,7 @@
     "express": "^4.18.2",
     "joi": "^17.10.0",
     "nodemon": "^3.0.1",
-    "tslib": "^2.6.2"
+    "tslib": "^2.6.2",
+    "yamljs": "^0.3.0"
   }
 }

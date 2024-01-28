@@ -13,7 +13,9 @@ const updateItem401: ErrorRequestHandler = (err, _req, res, _) => {
 
 const itemsRouter = routing()
     .get({
-        path: '/'
+        path: '/',
+        description: 'List items',
+        tags: ['Items']
     }, (_, res) => {
         res.json([])
     })
@@ -26,7 +28,9 @@ const itemsRouter = routing()
                 text: Joi.string().max(5120).allow(''),
                 published: Joi.boolean().default(false)
             })
-        }
+        },
+        description: 'Create an item',
+        tags: ['Items']
     }, (req, res) => {
         const item = req.body;
         res.json(item);
@@ -39,7 +43,9 @@ const itemsIdRouter = routing()
             params: {
                 id: Joi.string().required()
             },
-        }
+        },
+        description: 'Get an item',
+        tags: ['Items']
     }, (req, res) => {
         res.json({ message: `Got "${req.params.id}"` });
     })
@@ -56,7 +62,9 @@ const itemsIdRouter = routing()
                 published: Joi.boolean()
             }).min(1),
             onerror: updateItem401
-        }
+        },
+        description: 'Update an item',
+        tags: ['Items']
     }, (req, res) => {
         const item = req.body;
         item.id = req.params.id;
@@ -68,7 +76,9 @@ const itemsIdRouter = routing()
             params: {
                 id: Joi.string().required()
             },
-        }
+        },
+        description: 'Delete an item',
+        tags: ['Items']
     }, (req, res) => {
         res.json({ id: req.params.id });
     })
