@@ -5,6 +5,7 @@ import cors from 'cors';
 import routes from './routes';
 import validatorJoi from '@novice1/validator-joi'
 import { debugMiddleware } from './services/debug';
+import { authMiddleware, getTokenMiddleware, getUserMiddleware } from './middlewares/auth';
 
 // init app
 export const app = new FrameworkApp({
@@ -14,12 +15,15 @@ export const app = new FrameworkApp({
             cookieParser(),
             express.json(),
             express.urlencoded({ extended: true }),
-            cors()
+            cors(),
+            getTokenMiddleware,
+            getUserMiddleware
         ],
         validators: [validatorJoi(undefined, (err, _req, res) => {
             debugMiddleware.extend('validator-joi').error(err)
             res.status(400).json({message: 'bad request'})
-        })]
+        })],
+        auth: [authMiddleware]
     },
     routers: routes
 })

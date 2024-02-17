@@ -21,6 +21,7 @@ const itemsRouter = routing()
     })
     .post({
         path: '/',
+        auth: true,
         parameters: {
             body: Joi.object().keys({
                 title: Joi.string().required().min(1).max(128),
@@ -51,6 +52,7 @@ const itemsIdRouter = routing()
     })
     .put({ 
         path: '/:id',
+        auth: true,
         parameters: {
             params: {
                 id: Joi.string().required()
@@ -72,6 +74,7 @@ const itemsIdRouter = routing()
     })
     .delete({
         path: '/:id',
+        auth: true,
         parameters: {
             params: {
                 id: Joi.string().required()

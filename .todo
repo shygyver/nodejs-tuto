@@ -41,20 +41,19 @@
             [ ] Post item, ...
 
 # part-04
-[o] auth
-    [ ] install dependencies
+[x] auth
+    [x] install dependencies
         - npm install bcrypt express-jwt jsonwebtoken node-cache
         (to hash password, create a session token, simulate db)
         - npm i --save-dev @types/bcrypt
-    [ ] extend Express.Request (because session must be available in middlewares and controllers)
-        [ ] create folder "types"
-        [ ] update tsconfig.json
-            [ ] add "types" folder in "typeRoots"
-            [ ] add `"ts-node.files": true` (for npm run dev. nodemon runs ts-node and ts-node needs to read the types files)
-        [ ] redefine Express.Request in types/index.d.ts
-    [ ] create 'users' service
-    [ ] create auth routes
-    [ ] create middlewares + import them into app.ts
-    [ ] run lint to notice no-unused-vars error:
+    [x] extend Express.Request (because session must be available in middlewares and controllers)
+        [x] create folder "src/types"
+        [x] update tsconfig.json
+            [x] add `"ts-node.files": true` (for npm run dev. nodemon runs ts-node and ts-node needs to read the types files)
+        [x] redefine Express.Request in types/index.d.ts
+    [x] create 'users' service
+    [x] create auth routes
+    [x] create middlewares + import them into app.ts
+    [x] run lint to notice no-unused-vars error:
         - solution add rule in '.eslintrc.json': "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }]
-    [ ] require auth to post/put/delete items
+    [x] require auth to post/put/delete items

@@ -31,3 +31,4 @@ Some experience with:
 - __part-02__: http errors + request validation
 
 - __part-03__: API documentation
+- __part-04__: API authorization

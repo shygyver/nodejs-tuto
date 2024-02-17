@@ -1,5 +1,7 @@
-import { OpenAPI } from '@novice1/api-doc-generator';
+import { BearerUtil, OpenAPI } from '@novice1/api-doc-generator';
 import { EXTERNAL_PORT, EXTERNAL_PROTOCOL, HOSTNAME } from '../../config/server';
+
+const bearerAuth = new BearerUtil('bearerAuth')
 
 export const openAPIGenerator = new OpenAPI()
     .setTitle('API DOC')
@@ -11,3 +13,5 @@ export const openAPIGenerator = new OpenAPI()
             externalDocs: { description: 'Find more info here', url: 'https://swagger.io/specification/' }
         }
     ])
+    .addSecurityScheme(bearerAuth)
+    .setDefaultSecurity(bearerAuth)
